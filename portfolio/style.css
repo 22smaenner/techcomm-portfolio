@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "ArnoPro";
+    src: url('./assets/fonts/ArnoPro/arnopro_caption.otf');
+}
+@font-face {
+    font-family: "Luminari";
+    src: url('./assets/fonts/luminari/Luminari-Regular.ttf');
+}
+@font-face {
+    font-family: "Ruritania";
+    src: url('./assets/fonts/Ruritania/Ruritania.ttf');
+}
+
+h1 {
+    text-decoration: none; /*why's it not going away?*/
+    color: darkred;
+    font-family: "Luminari", serif;
+    font-size: 40pt;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: darkred;
+    font-family: "Luminari", serif;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+h3 {
+    color: indianred;
+    font-family: "Luminari", serif;
+    margin-bottom:7px;
+}
+
+header h1 {
+    position: absolute;
+    top: 8px;
+    left: 28px;
+    color: whitesmoke;
+}
+
+p, li {
+    font-family: "ArnoPro", serif;
+    color: dimgray;
+}
+
+h2, p {
+    margin-top: 0px;
+}
+
+#my-image {
+    background-color: indianred;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#banner-image {
+    width: 100%;
+    margin: 0px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+footer {
+    background-color: lightgray;
+    display: inline-block;
+    width: 98.1%; /* if I put it to literally anything more, a side-scroll shows up on the bottom and I don't know why and I hate it */
+    margin: 0px;
+    margin-bottom: -5px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    margin: 10px;
+}
+
+section {
+    margin: 20px;
+}
+
+nav {
+    background-color: darkred;
+    /*margin: 0px;*/
+    display: inline-block;
+    width: 100%;
+}
+
+h3+ul{
+    margin-top: 0px;
+}
+
+nav ul li { /* a list item inside an unordered list inside a nav */
+    /*display: inline-block;*/
+    list-style-type: none;
+    /*width: 120px;*/
+    /*background-color: darkred;*/
+}
+
+nav ul li a { /* the links */
+    display: block;
+    color: whitesmoke;
+    padding: 7px 16px 7px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0px;
+    /*background-color: darkred;*/
+    /*padding: 0;*/
+    /*padding-bottom: 0;*/
+    /*padding-left: 12px;*/
+    /*overflow: auto;*/
+}
+
+nav ul li a:hover { /* the link when hovered over */
+    background-color: lightgray;
+    color: darkred;
+}
+
+footer p {
+    margin: 10px;
+}
+
+#copyright {
+    float: left;
+}
+
+#email {
+    /*float: right;*/
+}
+
+#email a {
+    font-family: "ArnoPro";
+    text-decoration: none;
+    color: dimgray;
+}
+
+#port-pic {
+    width: 75px;
+}
+
+div.project {
+    clear: both;
+    margin-left: 12px;
+}
+
+div.project img {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    margin-top: 27px;
+}
+
+div.center {
+    display: grid;
+    place-items: center;
+}
+
+#content-area {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (min-width: 768px) { /* 768px or larger  (desktop/laptop) */
+    nav ul {
+        padding-left: 12px;
+    }
+    
+    nav ul li {
+        float: left;
+        width: 240px;
+    }
+    
+    .left-column, .right-column {
+    flex: 1;
+}
+.center-column {
+    flex: 0 1 600px;
+}
+}
+
+@media (max-width: 767px) { /* 767px or smaller (mobile device) */
+    nav ul {
+        padding-left: 0px;
+    }
+    
+    nav ul {
+        width: 100%;
+    }
+    
+    nav ul li {
+        float: none; /* List buttons vertically*/
+        border-bottom: 1px solid white; /* add a line between buttons*/
+    }
+    
+    .left-column, .right-column {
+        flex: 0 0 10px;
+    }
+
+    .center-column { 
+        flex: auto;
+    }
+}
+
+table {
+    border: 0px;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: solid;
+    padding: 0;
+}
+
+thead {
+    background-color: darkred;
+    color: ghostwhite;
+}
+
+th {
+    font-family: 'ArnoPro';
+    font-size: 10pt;
+    text-align: right;
+    padding: 4px;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+td {
+    font-family: 'ArnoPro';
+    font-size: 10pt;
+    overflow: hidden;
+    padding: 8px;
+    text-align: right;
+    width: 80px;
+    border: none;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+td:first-child {
+    background-color: lightgrey;
+    text-align: left;
+}
